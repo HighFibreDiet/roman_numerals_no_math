@@ -5,7 +5,7 @@ def roman_numerals(number)
   working_number = number
 
   roman_numbers.each do |key, numeral|
-    while working_number >= key && working_number > 0
+    while working_number >= key
      result << numeral
      working_number -= key
     end
